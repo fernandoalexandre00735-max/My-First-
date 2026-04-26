@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0a0a0f; color: white; font-family: system-ui, sans-serif; height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .container { text-align: center; }
+        .foto { width: 130px; height: 130px; border-radius: 50%; border: 5px solid #25D366; object-fit: cover; }
+        .nome { font-size: 26px; font-weight: bold; margin: 15px 0 25px; overflow: hidden; white-space: nowrap; border-right: 3px solid #25D366; animation: digitar 2s steps(10) forwards, piscar 0.5s step-end 3; width: 0; margin-left: auto; margin-right: auto; }
+        @keyframes digitar { from { width: 0; } to { width: 10ch; } }
+        @keyframes piscar { 50% { border-color: transparent; } }
+        .whatsapp-btn { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 18px; }
+        .whatsapp-btn img { width: 24px; height: 24px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="foto" src="0000.png" alt="Foto">
+        <div class="nome">FERNANDO</div>
+        <a class="whatsapp-btn" href="https://wa.me/258846186144" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/whatsapp.svg" alt="WhatsApp">
+            Conversar
+        </a>
+    </div>
+</body>
+</html>
