@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ============================================================
+    META TAGS ESSENCIAIS PARA SEO E ENGAGAMENTO
+    ============================================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TÍTULO (Máx. 60 caracteres) -->
+    <title>Frases Inspiradoras • Motivação Diária • Citações para a Vida</title>
+
+    <!-- DESCRIÇÃO (Máx. 160 caracteres) -->
+    <meta name="description" content="As melhores frases inspiradoras, citações motivacionais e pensamentos para transformar seu dia. Atualizado diariamente com conteúdo exclusivo.">
+
+    <!-- PALAVRAS-CHAVE -->
+    <meta name="keywords" content="frases inspiradoras, motivação diária, citações, pensamentos, mensagens positivas, desenvolvimento pessoal, frases de superação">
+
+    <!-- AUTOR -->
+    <meta name="author" content="Fernando Alexandre Nguenha">
+
+    <!-- ROBÔS (Indexar tudo) -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <!-- IDIOMA -->
+    <meta name="language" content="Portuguese">
+    <meta name="geo.region" content="BR">
+
+    <!-- ============================================================
+    META TAGS PARA REDES SOCIAIS (OPEN GRAPH - Facebook, LinkedIn)
+    ============================================================ -->
+    <meta property="og:title" content="Frases Inspiradoras • Motivação Diária">
+    <meta property="og:description" content="As melhores citações para inspirar sua vida e transformar sua mentalidade. Atualizado diariamente.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://my-first.vercel.app">
+    <meta property="og:image" content="https://my-first.vercel.app/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Frases Inspiradoras">
+
+    <!-- ============================================================
+    META TAGS PARA TWITTER
+    ============================================================ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Frases Inspiradoras • Motivação Diária">
+    <meta name="twitter:description" content="Citações para transformar seu dia e sua mentalidade.">
+    <meta name="twitter:image" content="https://my-first.vercel.app/og-image.jpg">
+
+    <!-- ============================================================
+    META TAGS PARA ENGAGEMENT (DEEP LINK, PWA, ETC)
+    ============================================================ -->
+    <link rel="canonical" href="https://my-first.vercel.app">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <script src="https://pl31071408.profitableratecpmnetwork.com/83/43/6f/83436f3590f523c7e660f53c679c148b.js"></script>
+
+
+    <!-- ============================================================
+    ESTILOS (CSS)
+    ============================================================ -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #0f0f1a;
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-image: radial-gradient(circle at 20% 50%, #1a1a2e 0%, #0f0f1a 100%);
+        }
+
+        /* --- CONTAINER PRINCIPAL --- */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(26, 26, 46, 0.85);
+            backdrop-filter: blur(12px);
+            border-radius: 32px;
+            padding: 40px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        /* --- CABEÇALHO --- */
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .header .logo {
+            font-size: 48px;
+            margin-bottom: 8px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #facc15, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            color: #94a3b8;
+            font-size: 16px;
+            margin-top: 4px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 12px;
+        }
+
+        /* --- CITAÇÃO PRINCIPAL --- */
+        .quote-box {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            padding: 30px 24px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s ease;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .quote-box blockquote {
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #f1f5f9;
+            quotes: "“" "”" "‘" "’";
+        }
+
+        .quote-box blockquote::before {
+            content: "“";
+            font-size: 40px;
+            color: #facc15;
+            display: block;
+            text-align: left;
+            margin-bottom: -10px;
+        }
+
+        .quote-box blockquote::after {
+            content: "”";
+            font-size: 40px;
+            color: #facc15;
+            display: block;
+            text-align: right;
+            margin-top: -10px;
+        }
+
+        .quote-box .autor {
+            color: #94a3b8;
+            font-size: 16px;
+            font-weight: 300;
+            margin-top: 12px;
+            letter-spacing: 1px;
+        }
+
+        .quote-box .autor::before {
+            content: "— ";
+            color: #facc15;
+        }
+
+        /* --- BOTÃO GERAR --- */
+        .btn-gerar {
+            background: linear-gradient(135deg, #facc15, #eab308);
+            color: #0f0f1a;
+            border: none;
+            padding: 14px 40px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(250, 204, 21, 0.25);
+            margin: 12px 0 20px;
+        }
+
+        .btn-gerar:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 32px rgba(250, 204, 21, 0.4);
+        }
+
+        .btn-gerar:active {
+            transform: scale(0.96);
+        }
+
+        /* --- CATEGORIAS (TAGS) --- */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0 10px;
+        }
+
+        .tags span {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            color: #94a3b8;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            transition: all 0.3s;
+            cursor: default;
+        }
+
+        .tags span:hover {
+            background: rgba(250, 204, 21, 0.12);
+            color: #facc15;
+            border-color: #facc15;
+        }
+
+        /* --- BOTÕES SOCIAIS --- */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 22px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: #e0e0e0;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .social-links .whatsapp {
+            background: #25d36620;
+            border-color: #25d36640;
+        }
+        .social-links .whatsapp:hover {
+            background: #25d366;
+            color: #fff;
+        }
+
+        .social-links .twitter {
+            background: #1da1f220;
+            border-color: #1da1f240;
+        }
+        .social-links .twitter:hover {
+            background: #1da1f2;
+            color: #fff;
+        }
+
+        .social-links .facebook {
+            background: #1877f220;
+            border-color: #1877f240;
+        }
+        .social-links .facebook:hover {
+            background: #1877f2;
+            color: #fff;
+        }
+
+        .social-links .copy {
+            background: #ffffff10;
+            border-color: #ffffff20;
+        }
+        .social-links .copy:hover {
+            background: #ffffff20;
+            color: #fff;
+        }
+
+        /* --- COPYRIGHT --- */
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #475569;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            padding-top: 20px;
+        }
+
+        .footer a {
+            color: #facc15;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- RESPONSIVO --- */
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 16px;
+            }
+            .quote-box blockquote {
+                font-size: 18px;
+            }
+            .header h1 {
+                font-size: 22px;
+            }
+            .social-links a {
+                font-size: 12px;
+                padding: 8px 14px;
+            }
+            .btn-gerar {
+                font-size: 16px;
+                padding: 12px 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- ============================================================
+        HEADER
+        ============================================================ -->
+        <div class="header">
+            <div class="logo">💡</div>
+            <h1>Frases Inspiradoras</h1>
+            <p>✦ Citações para transformar sua mentalidade ✦</p>
+        </div>
+
+        <!-- ============================================================
+        CITAÇÃO PRINCIPAL (Dinâmica)
+        ============================================================ -->
+        <div class="quote-box" id="quoteBox">
+            <blockquote id="quoteText">
+                A única maneira de fazer um excelente trabalho é amar o que você faz.
+            </blockquote>
+            <div class="autor" id="quoteAuthor">Steve Jobs</div>
+        </div>
+
+        <!-- ============================================================
+        BOTÃO GERAR
+        ============================================================ -->
+        <button class="btn-gerar" onclick="gerarFrase()">✨ Nova Frase</button>
+
+        <!-- ============================================================
+        TAGS / CATEGORIAS (SEO + Engajamento)
+        ============================================================ -->
+        <div class="tags">
+            <span>#motivação</span>
+            <span>#frases</span>
+            <span>#inspiração</span>
+            <span>#superação</span>
+            <span>#desenvolvimentopessoal</span>
+            <span>#mindset</span>
+            <span>#positividade</span>
+        </div>
+
+        <!-- ============================================================
+        BOTÕES DE COMPARTILHAMENTO (Engajamento)
+        ============================================================ -->
+        <div class="social-links">
+            <a href="#" class="whatsapp" onclick="compartilhar('whatsapp')">
+                📱 WhatsApp
+            </a>
+            <a href="#" class="twitter" onclick="compartilhar('twitter')">
+                🐦 Twitter
+            </a>
+            <a href="#" class="facebook" onclick="compartilhar('facebook')">
+                📘 Facebook
+            </a>
+            <a href="#" class="copy" onclick="copiarFrase()">
+                📋 Copiar
+            </a>
+        </div>
+
+        <!-- ============================================================
+        FOOTER
+        ============================================================ -->
+        <div class="footer">
+            © 2026 <a href="https://my-first.vercel.app" target="_blank"></a> •
+            Feito com ❤️ e ☕
+        </div>
+
+    </div>
+
+    <!-- ============================================================
+    JAVASCRIPT (Funcionalidades)
+    ============================================================ -->
+    
+    <script>
+    window.va = window.va || function() { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+    <script>
+        // ---------- BANCO DE DADOS DE FRASES ----------
+        const frases = [{
+            texto: "A única maneira de fazer um excelente trabalho é amar o que você faz.",
+            autor: "Steve Jobs"
+        }, {
+            texto: "Não espere por oportunidades, crie você mesmo as suas.",
+            autor: "Confúcio"
+        }, {
+            texto: "O sucesso é ir de fracasso em fracasso sem perder o entusiasmo.",
+            autor: "Winston Churchill"
+        }, {
+            texto: "Acredite que você pode e já está no meio do caminho.",
+            autor: "Theodore Roosevelt"
+        }, {
+            texto: "A vida é 10% do que acontece com você e 90% de como você reage.",
+            autor: "Charles R. Swindoll"
+        }, {
+            texto: "O único limite para a nossa realização de amanhã são as nossas dúvidas de hoje.",
+            autor: "Franklin D. Roosevelt"
+        }, {
+            texto: "Se você quer algo que nunca teve, terá que fazer algo que nunca fez.",
+            autor: "Thomas Jefferson"
+        }, {
+            texto: "A persistência é o caminho do êxito.",
+            autor: "Charlie Chaplin"
+        }, {
+            texto: "O futuro pertence àqueles que acreditam na beleza de seus sonhos.",
+            autor: "Eleanor Roosevelt"
+        }, {
+            texto: "Não importa o quão devagar você vá, desde que você não pare.",
+            autor: "Confúcio"
+        }, {
+            texto: "A melhor maneira de prever o futuro é criá-lo.",
+            autor: "Peter Drucker"
+        }, {
+            texto: "A jornada de mil milhas começa com um único passo.",
+            autor: "Lao Tzu"
+        }, {
+            texto: "A única coisa que fica entre você e o seu sonho é a vontade de tentar.",
+            autor: "Anônimo"
+        }, {
+            texto: "A vida é como andar de bicicleta: para manter o equilíbrio, você deve continuar em movimento.",
+            autor: "Albert Einstein"
+        }, {
+            texto: "Seja a mudança que você deseja ver no mundo.",
+            autor: "Mahatma Gandhi"
+        }, {
+            texto: "O que você faz hoje pode melhorar todos os seus amanhãs.",
+            autor: "Ralph Marston"
+        }, {
+            texto: "A coragem não é ausência de medo, mas a capacidade de vencê-lo.",
+            autor: "Nelson Mandela"
+        }, {
+            texto: "Sonhe grande, trabalhe duro, mantenha o foco e não desista.",
+            autor: "Anônimo"
+        }, {
+            texto: "A maior glória não é nunca cair, mas sim levantar-se sempre.",
+            autor: "Nelson Mandela"
+        }, {
+            texto: "Faça hoje o que outros não fazem para ter amanhã o que outros não têm.",
+            autor: "Anônimo"
+        }, {
+            texto: "A motivação nos faz começar, o hábito nos mantém em movimento.",
+            autor: "Jim Ryun"
+        }, {
+            texto: "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+            autor: "Robert Collier"
+        }];
+
+        // ---------- FUNÇÃO PARA GERAR FRASE ALEATÓRIA ----------
+        function gerarFrase() {
+            const indice = Math.floor(Math.random() * frases.length);
+            const frase = frases[indice];
+
+            document.getElementById('quoteText').textContent = frase.texto;
+            document.getElementById('quoteAuthor').textContent = frase.autor;
+
+            // Efeito de fade suave
+            const box = document.getElementById('quoteBox');
+            box.style.transition = 'opacity 0.2s ease';
+            box.style.opacity = '0.5';
+            setTimeout(() => {
+                box.style.opacity = '1';
+            }, 200);
+
+            // Atualiza a URL com a frase (para SEO)
+            const url = new URL(window.location);
+            url.searchParams.set('frase', encodeURIComponent(frase.texto.substring(0, 30)));
+            window.history.replaceState({}, '', url);
+        }
+
+        // ---------- COMPARTILHAR ----------
+        function compartilhar(rede) {
+            const frase = document.getElementById('quoteText').textContent;
+            const autor = document.getElementById('quoteAuthor').textContent;
+            const textoCompleto = `"${frase}" — ${autor}`;
+            const url = encodeURIComponent('https://my-first.vercel.app');
+
+            let link = '';
+            switch (rede) {
+                case 'whatsapp':
+                    link = `https://api.whatsapp.com/send?text=${encodeURIComponent(textoCompleto + ' ' + '🔗 ' + 'https://my-first.vercel.app')}`;
+                    break;
+                case 'twitter':
+                    link = `https://twitter.com/intent/tweet?text=${encodeURIComponent(textoCompleto)}&url=${url}`;
+                    break;
+                case 'facebook':
+                    link = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${encodeURIComponent(textoCompleto)}`;
+                    break;
+                default:
+                    return;
+            }
+            window.open(link, '_blank');
+        }
+
+        // ---------- COPIAR FRASE ----------
+        function copiarFrase() {
+            const frase = document.getElementById('quoteText').textContent;
+            const autor = document.getElementById('quoteAuthor').textContent;
+            const textoCompleto = `"${frase}" — ${autor}`;
+
+            navigator.clipboard.writeText(textoCompleto)
+                .then(() => {
+                    const btn = document.querySelector('.copy');
+                    const originalText = btn.textContent;
+                    btn.textContent = '✅ Copiado!';
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                    }, 2000);
+                })
+                .catch(() => {
+                    alert('Copie manualmente: ' + textoCompleto);
+                });
+        }
+
+        // ---------- CARREGAR FRASE INICIAL OU DA URL ----------
+        function carregarFraseInicial() {
+            const params = new URLSearchParams(window.location.search);
+            const fraseParam = params.get('frase');
+
+            if (fraseParam) {
+                // Tenta encontrar a frase pelo início do texto
+                const encontrada = frases.find(f =>
+                    f.texto.substring(0, 30).includes(decodeURIComponent(fraseParam))
+                );
+                if (encontrada) {
+                    document.getElementById('quoteText').textContent = encontrada.texto;
+                    document.getElementById('quoteAuthor').textContent = encontrada.autor;
+                    return;
+                }
+            }
+
+            // Se não veio da URL, pega uma aleatória
+            const indice = Math.floor(Math.random() * frases.length);
+            const frase = frases[indice];
+            document.getElementById('quoteText').textContent = frase.texto;
+            document.getElementById('quoteAuthor').textContent = frase.autor;
+        }
+
+        // ---------- INICIALIZAR ----------
+        carregarFraseInicial();
+    </script>
+</body>
+</html>
