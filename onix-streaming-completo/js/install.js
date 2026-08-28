@@ -1,1 +1,0 @@
-let promptEvent;const b=document.querySelector('#install');addEventListener('beforeinstallprompt',e=>{e.preventDefault();promptEvent=e;if(b)b.hidden=false});b?.addEventListener('click',async()=>{if(!promptEvent)return;promptEvent.prompt();await promptEvent.userChoice;promptEvent=null;b.hidden=true});

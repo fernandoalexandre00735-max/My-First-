@@ -1,1 +1,0 @@
-Reservado para futuras telas; a SPA atual renderiza as telas em app.html.
