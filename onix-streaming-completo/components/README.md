@@ -1,0 +1,1 @@
+Os cards/header/footer são renderizados por funções reutilizáveis em js/app.js.
