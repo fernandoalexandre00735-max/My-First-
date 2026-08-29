@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Minha plataforma de streaming">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+
+  <title>ONIX</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">ONIX</div>
+
+    <button class="icon-btn" id="searchBtn" aria-label="Pesquisar">
+      🔍
+    </button>
+  </header>
+
+
+  <!-- =========================
+       PÁGINA: INÍCIO
+  ========================== -->
+  <main id="home" class="page active">
+
+    <section class="hero">
+
+      <div class="hero-content">
+        <span class="badge">EM DESTAQUE</span>
+
+        <h1>The Last Frontier</h1>
+
+        <p>
+          Uma aventura começa quando um grupo precisa
+          enfrentar um mundo completamente desconhecido.
+        </p>
+
+        <div class="hero-buttons">
+
+          <button class="primary-btn" data-action="watch">
+            ▶ Assistir
+          </button>
+
+          <button class="secondary-btn" data-action="add">
+            ＋ Minha lista
+          </button>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- EM ALTA -->
+    <section class="section">
+
+      <div class="section-title">
+        <h2>Em alta</h2>
+        <button class="see-all" data-page="explore">
+          Ver tudo
+        </button>
+      </div>
+
+      <div class="movie-row">
+
+        <article class="movie-card">
+          <img src="https://picsum.photos/300/450?random=1"
+               alt="Filme">
+          <h3>Filme 01</h3>
+          <span>2026 • Ação</span>
+        </article>
+
+        <article class="movie-card">
+          <img src="https://picsum.photos/300/450?random=2"
+               alt="Filme">
+          <h3>Filme 02</h3>
+          <span>2026 • Drama</span>
+        </article>
+
+        <article class="movie-card">
+          <img src="https://picsum.photos/300/450?random=3"
+               alt="Filme">
+          <h3>Filme 03</h3>
+          <span>2025 • Anime</span>
+        </article>
+
+        <article class="movie-card">
+          <img src="https://picsum.photos/300/450?random=4"
+               alt="Filme">
+          <h3>Filme 04</h3>
+          <span>2025 • Ficção</span>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- RECOMENDADOS -->
+    <section class="section">
+
+      <h2>Recomendados para você</h2>
+
+      <div class="movie-row">
+
+        <article class="movie-card">
+          <img src="https://picsum.photos/300/450?random=5"
+               alt="Filme">
+          <h3>Filme 05</h3>
+          <span>2026 • Ação</span>
+        </article>
+
+        <article class="movie-card">
+          <img src="https://picsum.photos/300/450?random=6"
+               alt="Filme">
+          <h3>Filme 06</h3>
+          <span>2026 • Aventura</span>
+        </article>
+
+        <article class="movie-card">
+          <img src="https://picsum.photos/300/450?random=7"
+               alt="Filme">
+          <h3>Filme 07</h3>
+          <span>2025 • Fantasia</span>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       PÁGINA: EXPLORAR
+  ========================== -->
+
+  <main id="explore" class="page">
+
+    <div class="page-heading">
+      <h1>Explorar</h1>
+      <p>Encontre algo para assistir.</p>
+    </div>
+
+    <div class="search-box">
+
+      <span>🔍</span>
+
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Pesquisar filmes..."
+      >
+
+    </div>
+
+
+    <div class="categories">
+
+      <button class="category active">Todos</button>
+      <button class="category">Ação</button>
+      <button class="category">Anime</button>
+      <button class="category">Drama</button>
+      <button class="category">Ficção</button>
+
+    </div>
+
+
+    <div class="movie-grid" id="movieGrid">
+
+      <article class="movie-card">
+        <img src="https://picsum.photos/300/450?random=10">
+        <h3>O Último Reino</h3>
+        <span>2026 • Ação</span>
+      </article>
+
+      <article class="movie-card">
+        <img src="https://picsum.photos/300/450?random=11">
+        <h3>Além do Tempo</h3>
+        <span>2026 • Ficção</span>
+      </article>
+
+      <article class="movie-card">
+        <img src="https://picsum.photos/300/450?random=12">
+        <h3>Nova Era</h3>
+        <span>2025 • Drama</span>
+      </article>
+
+      <article class="movie-card">
+        <img src="https://picsum.photos/300/450?random=13">
+        <h3>Guerreiros</h3>
+        <span>2025 • Ação</span>
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       PÁGINA: MINHA LISTA
+  ========================== -->
+
+  <main id="list" class="page">
+
+    <div class="page-heading">
+      <h1>Minha lista</h1>
+      <p>Filmes que você salvou.</p>
+    </div>
+
+    <div id="watchlist" class="movie-grid">
+
+      <div class="empty-state">
+        <div>♡</div>
+        <h2>Sua lista está vazia</h2>
+        <p>
+          Adicione filmes para encontrá-los aqui.
+        </p>
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       PÁGINA: PERFIL
+  ========================== -->
+
+  <main id="profile" class="page">
+
+    <div class="profile">
+
+      <div class="avatar">
+        👤
+      </div>
+
+      <h1>Meu perfil</h1>
+
+      <p>Bem-vindo ao ONIX.</p>
+
+    </div>
+
+    <div class="settings">
+
+      <button>
+        ⚙️ Configurações
+        <span>›</span>
+      </button>
+
+      <button>
+        🔔 Notificações
+        <span>›</span>
+      </button>
+
+      <button>
+        ℹ️ Sobre
+        <span>›</span>
+      </button>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       DETALHES DO FILME
+  ========================== -->
+
+  <main id="details" class="page">
+
+    <button class="back-btn" id="backBtn">
+      ← Voltar
+    </button>
+
+    <section class="movie-details">
+
+      <img
+        class="details-poster"
+        src="https://picsum.photos/500/750?random=30"
+        alt="Filme"
+      >
+
+      <div class="details-info">
+
+        <span class="badge">2026</span>
+
+        <h1>The Last Frontier</h1>
+
+        <p class="metadata">
+          16+ • 2h 15min • Ação • Ficção
+        </p>
+
+        <div class="detail-buttons">
+
+          <button class="primary-btn">
+            ▶ Assistir agora
+          </button>
+
+          <button class="secondary-btn">
+            ↗ Compartilhar
+          </button>
+
+        </div>
+
+        <h2>Sinopse</h2>
+
+        <p>
+          Uma emocionante história de sobrevivência,
+          coragem e descoberta em um mundo desconhecido.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <h2>Você também pode gostar</h2>
+
+      <div class="movie-row">
+
+        <article class="movie-card">
+          <img src="https://picsum.photos/300/450?random=31">
+          <h3>Recomendado 01</h3>
+        </article>
+
+        <article class="movie-card">
+          <img src="https://picsum.photos/300/450?random=32">
+          <h3>Recomendado 02</h3>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- NAVEGAÇÃO -->
+  <nav class="bottom-nav">
+
+    <button class="nav-item active" data-page="home">
+      <span>⌂</span>
+      <small>Início</small>
+    </button>
+
+    <button class="nav-item" data-page="explore">
+      <span>◉</span>
+      <small>Explorar</small>
+    </button>
+
+    <button class="nav-item" data-page="list">
+      <span>♡</span>
+      <small>Minha lista</small>
+    </button>
+
+    <button class="nav-item" data-page="profile">
+      <span>●</span>
+      <small>Perfil</small>
+    </button>
+
+  </nav>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
